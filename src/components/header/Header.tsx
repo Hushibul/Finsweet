@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import ButtonPrimary from "../base/ButtonPrimary";
 import Classes from "./Header.module.css";
 
@@ -22,7 +23,9 @@ const Header = () => {
           proident.
         </p>
 
-        <ButtonPrimary text="Read More >" />
+        <Link to="/blog">
+          <ButtonPrimary text="Read More >" />
+        </Link>
       </div>
     </div>
   );

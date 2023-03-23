@@ -9,7 +9,7 @@ import TwitterTwo from "../../assets/images/TwitterTwo.svg";
 
 const Footer = () => {
   return (
-    <div className="px-20 bg-bgSecondary">
+    <div className="md:px-10 lg-px-20 bg-bgSecondary">
       <div className="flex w-full items-center">
         <div className="mx-auto py-6 md:mx-0">
           <img src={Logo} alt="Brand Logo" />
@@ -22,16 +22,16 @@ const Footer = () => {
           ))}
         </ul>
       </div>
-      <div className="grid grid-cols-12 px-10 bg-slate-600 py-10">
+      <div className="grid grid-cols-12 px-2 py-6 md:px-4 lg:px-10 bg-slate-600 md:py-10">
         <div className="col-span-12 md:col-span-6">
           <h2 className="text-headingSecondary text-white font-fontBold">
             Subscribe to our news letter to get latest updates and news
           </h2>
         </div>
-        <div className="col-span-12 md:col-span-6">
+        <div className="col-span-12 md:col-span-6 md:ml-6 lg:mr-6 w-full lg:w-2/3">
           <input
             type="text"
-            className="px-4 py-3 bg-transparent border border-mediumGrey mr-6 w-full md:w-2/3"
+            className="px-4 py-3 bg-transparent border border-mediumGrey "
             placeholder="Enter your email"
           />
           <ButtonPrimary text="Subscribe" />

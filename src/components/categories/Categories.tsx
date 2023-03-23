@@ -1,6 +1,7 @@
 import BusinessCard from "../cards/BusinessCard";
 import { businessCard } from "../../assets/constants/constant";
 import { useState } from "react";
+import HeadingPrimary from "../base/HeadingPrimary";
 
 const Categories = () => {
   interface card {
@@ -17,11 +18,9 @@ const Categories = () => {
     content: "",
   });
   return (
-    <div className="mt-20">
-      <h2 className="text-bgSecondary text-headingSecondary mb-10 font-fontBold text-center">
-        Choose A Catagory
-      </h2>
-      <div className=" grid grid-cols-12 gap-5 mx-20">
+    <div className="mt-10 lg:mt-20 mx-2 md:mx-12 lg:mx-20">
+      <HeadingPrimary text="Choose A Catagory" />
+      <div className=" grid grid-cols-12 gap-2 mt-6 md:gap-5 ">
         {businessCard.map((item) => (
           <div
             onClick={() => setActive(item)}

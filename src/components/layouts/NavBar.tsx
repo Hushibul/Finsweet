@@ -18,7 +18,7 @@ const NavBar = () => {
             : "hidden lg:flex lg:flex-row text-white ml-auto gap-6 text-paragraph py-6"
         }
       >
-        {menu.map((item) => (
+        {menu.slice(0, 4).map((item) => (
           <Link key={item.id} to={item.path}>
             <li>{item.name}</li>
           </Link>

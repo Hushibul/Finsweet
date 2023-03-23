@@ -1,9 +1,12 @@
+import BlogTitle from "../base/BlogTitle";
+import Subtitle from "../base/Subtitle";
+
 const Aboutus = () => {
   return (
-    <div className="mt-20 grid grid-cols-12 md:mx-20 px-12 py-20 text-bgSecondary bg-boxSecondary">
-      <div className="col-span-12 md:col-span-6  px-4">
-        <h5 className="text-btnText font-fontBold">About Us</h5>
-        <h2 className="text-headingSecondary font-fontBold">
+    <div className="mt-10 bg-boxSecondary grid grid-cols-12 px-2 py-10 md:mx-10 md:px-6 md:py-20 md:mt-20 lg:mx-20 lg:px-12">
+      <div className="col-span-12 md:px-4 lg:col-span-6">
+        <Subtitle text="About Us" />
+        <h2 className="text-bgSecondary text-headingSecondary font-fontBold">
           We are a community of content writers who share their learnings
         </h2>
         <p className="text-paragraph text-mediumGrey mt-4">
@@ -15,11 +18,9 @@ const Aboutus = () => {
           Read More {">"}
         </p>
       </div>
-      <div className="col-span-12 md:col-span-6 px-4">
-        <h5 className="text-btnText font-fontBold mt-8 md:mt-0">Our Misson</h5>
-        <h3 className="text-blogHeading font-fontBold mt-2">
-          We are a community of content writers who share their learnings
-        </h3>
+      <div className="col-span-12 px-2 mt-6 md:px-4 lg:col-span-6 lg:mt-0">
+        <Subtitle text="Our Misson" />
+        <BlogTitle text="We are a community of content writers who share their learnings" />
         <p className="text-paragraph text-mediumGrey mt-4">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
