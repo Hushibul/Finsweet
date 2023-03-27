@@ -1,5 +1,5 @@
 import { menu } from "../../assets/constants/constant";
-import Logo from "../../assets/images/Logo.svg";
+import Logo from "../../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import { CiMenuFries } from "react-icons/ci";
 import { useState } from "react";
@@ -9,7 +9,7 @@ const NavBar = () => {
   return (
     <nav className="flex flex-col py-5 lg:py-0 lg:flex-row w-full md:pl-20 bg-bgSecondary items-center relative">
       <div>
-        <img src={Logo} alt="Brand Logo" />
+        <img className="h-12 w-24" src={Logo} alt="Brand Logo" />
       </div>
       <ul
         className={

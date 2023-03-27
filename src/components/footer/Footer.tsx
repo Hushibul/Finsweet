@@ -1,4 +1,4 @@
-import Logo from "../../assets/images/Logo.svg";
+import Logo from "../../assets/images/Logo.png";
 import { Link } from "react-router-dom";
 import { menu } from "../../assets/constants/constant";
 import ButtonPrimary from "../base/ButtonPrimary";
@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="md:px-10 lg-px-20 bg-bgSecondary">
       <div className="flex w-full items-center">
         <div className="mx-auto py-6 md:mx-0">
-          <img src={Logo} alt="Brand Logo" />
+          <img className="w-24 h-12" src={Logo} alt="Brand Logo" />
         </div>
         <ul className="hidden md:flex text-white ml-auto gap-6 text-paragraph py-6">
           {menu.map((item) => (
