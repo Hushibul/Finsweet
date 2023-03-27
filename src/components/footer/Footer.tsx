@@ -24,14 +24,14 @@ const Footer = () => {
       </div>
       <div className="grid grid-cols-12 px-2 py-6 md:px-4 lg:px-10 bg-slate-600 md:py-10">
         <div className="col-span-12 md:col-span-6">
-          <h2 className="text-headingSecondary text-white font-fontBold">
+          <h2 className="text-blogHeading md:text-headingSecondary text-white font-fontBold">
             Subscribe to our news letter to get latest updates and news
           </h2>
         </div>
         <div className="col-span-12 md:col-span-6 md:ml-6 lg:mr-6 w-full lg:w-2/3">
           <input
             type="text"
-            className="px-4 py-3 bg-transparent border border-mediumGrey "
+            className="mr-1 p-4 bg-transparent border border-mediumGrey "
             placeholder="Enter your email"
           />
           <ButtonPrimary text="Subscribe" />

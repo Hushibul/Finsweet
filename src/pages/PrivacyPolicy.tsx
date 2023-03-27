@@ -47,7 +47,7 @@ const PrivacyPolicy = () => {
           nibh. Ipsum suspendisse ultrices gravida dictum fusce ut placerat orci
           nulla. Neque convallis a cras semper auctor neque vitae tempus quam.
         </p>
-        <p className="text-mediumGrey mt-4">
+        <p className="text-mediumGrey mt-4 mb-16">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Non
           blandit massa enim nec. Scelerisque viverra mauris in aliquam sem. At

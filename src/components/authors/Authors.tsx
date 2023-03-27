@@ -3,7 +3,7 @@ import { authors } from "../../assets/constants/constant";
 
 const Authors = () => {
   return (
-    <div className="mt-24 mx-2 md:mx-10 lg:mx-20">
+    <div className="mt-8 mx-2 md:mt-16 md:mx-10 lg:mx-20 lg:mt-24">
       <h2 className="text-bgSecondary text-headingSecondary mb-10 font-fontBold text-center">
         List of Authors
       </h2>

@@ -11,7 +11,7 @@ const OurAuthors = () => {
         {authors.map((item) => (
           <div
             key={item.id}
-            className="col-span-12 mt-2 bg-gray-200 rounded-md md:mt-8 md:col-span-6 md:ml-8 lg:ml-4 lg:mt-0 lg:col-span-3 lg:[&:first-child]:ml-0"
+            className="col-span-12 mt-2 bg-gray-200 rounded-md md:mt-8 md:col-span-6 md:ml-8 lg:ml-4 lg:mb-3 lg:mt-0 lg:col-span-3"
           >
             <AuthorCard
               image={item.image}

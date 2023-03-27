@@ -1,9 +1,9 @@
 import BlogCard from "../cards/BlogCard";
 import { allBlogs } from "../../assets/constants/constant";
-import { useState } from "react";
+import { useState, Fragment } from "react";
 
 const Blogs = () => {
-  const [start, setStart] = useState(1);
+  const [start, setStart] = useState(0);
   const [end, setEnd] = useState(5);
 
   function Prev() {
@@ -27,25 +27,35 @@ const Blogs = () => {
         All Post
       </h2>
       {[...allBlogs].slice(start, end).map((item) => (
-        <BlogCard
-          image={item.image}
-          category={item.category}
-          title={item.title}
-          content={item.content}
-        />
+        <Fragment key={item.id}>
+          <BlogCard
+            image={item.image}
+            category={item.category}
+            title={item.title}
+            content={item.content}
+          />
+        </Fragment>
       ))}
 
       <div className="text-center mt-6">
         <button
           disabled={start === 0 ? true : false}
-          className="mr-6 font-fontBold text-bgSecondary text-3xl"
+          className={
+            start === 0
+              ? "mr-6 font-fontBold text-bgSecondary text-2xl opacity-40 scale-90"
+              : "mr-6 font-fontBold text-bgSecondary text-3xl"
+          }
           onClick={Prev}
         >
           Prev
         </button>
         <button
           disabled={end >= allBlogs.length ? true : false}
-          className="font-fontBold text-bgSecondary text-3xl"
+          className={
+            end >= allBlogs.length
+              ? "font-fontBold text-bgSecondary text-2xl scale-90 opacity-40"
+              : "font-fontBold text-bgSecondary text-3xl"
+          }
           onClick={Next}
         >
           Next
