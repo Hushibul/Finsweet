@@ -1,4 +1,3 @@
-import { useLocation } from "react-router-dom";
 import ButtonPrimary from "../base/ButtonPrimary";
 
 const Hero = ({
@@ -10,7 +9,6 @@ const Hero = ({
   name,
   date,
 }: any) => {
-  const location = useLocation();
   return (
     <div className="bg-slate-200 text-bgSecondary">
       {image ? (
