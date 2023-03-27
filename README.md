@@ -1,6 +1,7 @@
 # Finsweet
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
 This site is deployed in https://finsweet-blogs.netlify.app/
 
 ## Available Scripts
